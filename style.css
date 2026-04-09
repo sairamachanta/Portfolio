@@ -450,6 +450,8 @@ ul {
 .image-wrapper {
     width: 100%;
     max-width: 650px;
+    aspect-ratio: 1/1;
+    /* Forces the box to be much taller */
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -462,9 +464,10 @@ ul {
 
 .image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+    /* Fill the new taller space perfectly */
     z-index: 10;
 }
 
