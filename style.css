@@ -371,12 +371,12 @@ ul {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 7rem;
+    padding-top: 10rem;
     padding-bottom: 2rem;
 }
 
 .hero-content {
-    margin: auto 0;
+    margin: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
