@@ -980,6 +980,11 @@ footer {
         padding: 4rem 0;
     }
 
+    .hero.section {
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    }
+
     .contact-card {
         padding: 2rem;
     }
