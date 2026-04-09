@@ -449,15 +449,15 @@ ul {
 
 .image-wrapper {
     width: 100%;
-    max-width: 400px;
-    aspect-ratio: 1/1;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    max-width: 450px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
-    animation: morphing 15s ease-in-out infinite;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .image-wrapper img {
