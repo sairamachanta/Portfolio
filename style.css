@@ -115,6 +115,11 @@ ul {
     color: var(--text-secondary);
 }
 
+.hover-underline:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
