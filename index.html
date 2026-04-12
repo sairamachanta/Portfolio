@@ -247,16 +247,242 @@
             <h2 class="section-title fade-in">Featured <span class="text-accent">Projects</span></h2>
 
             <div class="fade-in-up"
-                style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
-                <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">All Projects</button>
-                <button class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">QA
+                style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;"
+                id="project-filters">
+                <button class="btn btn-primary filter-btn active" data-filter="all"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">All Projects</button>
+                <button class="btn btn-outline filter-btn" data-filter="qa-automation"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">QA
                     Automation</button>
-                <button class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Full Stack</button>
+                <button class="btn btn-outline filter-btn" data-filter="full-stack"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Full Stack</button>
             </div>
 
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-card fade-in-up">
+                <!-- Project 1: Playwright Multi-layered -->
+                <div class="project-card glass-card fade-in-up" data-category="qa-automation">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                                <i class="fas fa-layer-group text-accent fa-2x"></i>
+                                <span
+                                    style="background: rgba(139,92,246,0.1); color: #8b5cf6; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(139,92,246,0.2);">QA
+                                    Automation</span>
+                            </div>
+                            <h3>Enterprise-Grade Playwright Framework</h3>
+                            <p class="subtitle">Multi-Layered E2E Automation</p>
+                        </div>
+                        <p class="project-desc">Robust framework for UI, API, Accessibility, and Performance testing.
+                            Uses POM pattern, Axe-core, and Lighthouse to achieve enterprise-quality delivery.</p>
+                        <div class="project-tags">
+                            <span class="tag sm">Playwright</span>
+                            <span class="tag sm">Axe-core</span>
+                            <span class="tag sm">Lighthouse</span>
+                            <span class="tag sm">POM</span>
+                        </div>
+                        <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                            <a href="https://sairamachanta.github.io/Play-Wright-Automation/" target="_blank"
+                                class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-external-link-alt"></i> Live Report
+                            </a>
+                            <a href="https://github.com/sairamachanta/Play-Wright-Automation" target="_blank"
+                                class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: SauceDemo Framework -->
+                <div class="project-card glass-card fade-in-up" data-category="qa-automation">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                                <i class="fas fa-flask text-accent fa-2x"></i>
+                                <span
+                                    style="background: rgba(139,92,246,0.1); color: #8b5cf6; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(139,92,246,0.2);">QA
+                                    Automation</span>
+                            </div>
+                            <h3>Enterprise UI Functional Framework</h3>
+                            <p class="subtitle">Playwright + SauceDemo</p>
+                        </div>
+                        <p class="project-desc">E2E ecosystem with custom Fixtures, Page Object Model, and Allure
+                            reporting. Integrated via GitHub Actions for full DevOps quality gate.</p>
+                        <div class="project-tags">
+                            <span class="tag sm">Playwright</span>
+                            <span class="tag sm">TypeScript</span>
+                            <span class="tag sm">CI/CD</span>
+                            <span class="tag sm">Allure</span>
+                        </div>
+                        <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                            <a href="https://sairamachanta.github.io/UI-Functional-Framework-Playwright-SauceDemo-/"
+                                target="_blank" class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-external-link-alt"></i> Live Report
+                            </a>
+                            <a href="https://github.com/sairamachanta/UI-Functional-Framework-Playwright-SauceDemo-"
+                                target="_blank" class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: API Suite -->
+                <div class="project-card glass-card fade-in-up" data-category="qa-automation">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                                <i class="fas fa-plug text-accent fa-2x"></i>
+                                <span
+                                    style="background: rgba(139,92,246,0.1); color: #8b5cf6; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(139,92,246,0.2);">QA
+                                    Automation</span>
+                            </div>
+                            <h3>Enterprise API Automation Suite</h3>
+                            <p class="subtitle">Mocking & Schema Validation</p>
+                        </div>
+                        <p class="project-desc">Modular API framework using Playwright and TypeScript. Features
+                            intelligent mocking, Ajv contract validation, and advanced request chaining.</p>
+                        <div class="project-tags">
+                            <span class="tag sm">Playwright</span>
+                            <span class="tag sm">TypeScript</span>
+                            <span class="tag sm">Ajv</span>
+                            <span class="tag sm">API</span>
+                        </div>
+                        <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                            <a href="https://sairamachanta.github.io/API-Integration-Suite-Playwright-ReqRes.in/"
+                                target="_blank" class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-external-link-alt"></i> Live Report
+                            </a>
+                            <a href="https://github.com/sairamachanta/API-Integration-Suite-Playwright-ReqRes.in"
+                                target="_blank" class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Performance -->
+                <div class="project-card glass-card fade-in-up" data-category="qa-automation">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                                <i class="fas fa-gauge-high text-accent fa-2x"></i>
+                                <span
+                                    style="background: rgba(139,92,246,0.1); color: #8b5cf6; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(139,92,246,0.2);">QA
+                                    Automation</span>
+                            </div>
+                            <h3>High-Performance Load Framework</h3>
+                            <p class="subtitle">k6 + Lighthouse CI</p>
+                        </div>
+                        <p class="project-desc">Dual-layer suite for protocol benchmarking and UI performance audits.
+                            Implements strict quality gates with P95/P99 percentile thresholds.</p>
+                        <div class="project-tags">
+                            <span class="tag sm">k6</span>
+                            <span class="tag sm">Lighthouse</span>
+                            <span class="tag sm">Performance</span>
+                            <span class="tag sm">SLA</span>
+                        </div>
+                        <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                            <a href="https://sairamachanta.github.io/fullstack-performance-testing" target="_blank"
+                                class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-external-link-alt"></i> Metrics Dashboard
+                            </a>
+                            <a href="https://github.com/sairamachanta/fullstack-performance-testing" target="_blank"
+                                class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: BDD -->
+                <div class="project-card glass-card fade-in-up" data-category="qa-automation">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                                <i class="fas fa-comments text-accent fa-2x"></i>
+                                <span
+                                    style="background: rgba(139,92,246,0.1); color: #8b5cf6; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(139,92,246,0.2);">QA
+                                    Automation</span>
+                            </div>
+                            <h3>Enterprise BDD Automation Suite</h3>
+                            <p class="subtitle">Playwright + Cucumber.js</p>
+                        </div>
+                        <p class="project-desc">Gherkin-based "Living Documentation" framework. Features Shard World
+                            context for state management and automated failure screenshot injection.</p>
+                        <div class="project-tags">
+                            <span class="tag sm">Gherkin</span>
+                            <span class="tag sm">Cucumber.js</span>
+                            <span class="tag sm">BDD</span>
+                            <span class="tag sm">TypeScript</span>
+                        </div>
+                        <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                            <a href="https://sairamachanta.github.io/playwright-cucumber-bdd-framework/" target="_blank"
+                                class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-external-link-alt"></i> Execution Results
+                            </a>
+                            <a href="https://github.com/sairamachanta/playwright-cucumber-bdd-framework" target="_blank"
+                                class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Visual Regression -->
+                <div class="project-card glass-card fade-in-up" data-category="qa-automation">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                                <i class="fas fa-eye text-accent fa-2x"></i>
+                                <span
+                                    style="background: rgba(139,92,246,0.1); color: #8b5cf6; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(139,92,246,0.2);">QA
+                                    Automation</span>
+                            </div>
+                            <h3>Enterprise Visual Regression Suite</h3>
+                            <p class="subtitle">Pixel-Perfect Validation</p>
+                        </div>
+                        <p class="project-desc">Solves visual flakiness on dynamic apps using SnapshotHelper. Integrated
+                            into a "Green-Gate" CI/CD pipeline for cross-browser visual consistency.</p>
+                        <div class="project-tags">
+                            <span class="tag sm">Visual Testing</span>
+                            <span class="tag sm">Playwright</span>
+                            <span class="tag sm">CI/CD</span>
+                            <span class="tag sm">Snapshot</span>
+                        </div>
+                        <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                            <a href="https://sairamachanta.github.io/playwright-visual-regression-suite/"
+                                target="_blank" class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-external-link-alt"></i> Visual Dashboard
+                            </a>
+                            <a href="https://github.com/sairamachanta/playwright-visual-regression-suite"
+                                target="_blank" class="text-accent hover-underline"
+                                style="font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card glass-card fade-in-up" data-category="full-stack">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -287,8 +513,8 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card glass-card fade-in-up delay-1">
+                <!-- Project 8 -->
+                <div class="project-card glass-card fade-in-up delay-1" data-category="full-stack">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -319,8 +545,8 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card glass-card fade-in-up delay-2">
+                <!-- Project 9 -->
+                <div class="project-card glass-card fade-in-up delay-2" data-category="full-stack">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -350,8 +576,8 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card glass-card fade-in-up delay-3">
+                <!-- Project 10 -->
+                <div class="project-card glass-card fade-in-up delay-3" data-category="qa-automation">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -382,8 +608,8 @@
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card glass-card fade-in-up delay-1">
+                <!-- Project 11 -->
+                <div class="project-card glass-card fade-in-up delay-1" data-category="qa-automation">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -413,8 +639,8 @@
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-card glass-card fade-in-up delay-2">
+                <!-- Project 12 -->
+                <div class="project-card glass-card fade-in-up delay-2" data-category="qa-automation">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -446,8 +672,8 @@
                     </div>
                 </div>
 
-                <!-- Project 7 -->
-                <div class="project-card glass-card fade-in-up delay-3">
+                <!-- Project 13 -->
+                <div class="project-card glass-card fade-in-up delay-3" data-category="full-stack">
                     <div class="project-content">
                         <div class="project-header">
                             <div
@@ -506,12 +732,12 @@
                         <p style="color: var(--text-secondary); font-size: 0.9rem;">Year Experience</p>
                     </div>
                     <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-                        <h4 style="font-size: 2rem; color: var(--accent-blue); margin-bottom: 0.5rem;">7+</h4>
+                        <h4 style="font-size: 2rem; color: var(--accent-blue); margin-bottom: 0.5rem;">13+</h4>
                         <p style="color: var(--text-secondary); font-size: 0.9rem;">Projects Built</p>
                     </div>
                     <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-                        <h4 style="font-size: 2rem; color: var(--accent-purple); margin-bottom: 0.5rem;">2</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Test Frameworks</p>
+                        <h4 style="font-size: 2rem; color: var(--accent-purple); margin-bottom: 0.5rem;">6</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Enterprise Suites</p>
                     </div>
                     <div class="glass-card" style="padding: 1.5rem; text-align: center;">
                         <h4 style="font-size: 2rem; color: var(--accent-blue); margin-bottom: 0.5rem;">5+</h4>
